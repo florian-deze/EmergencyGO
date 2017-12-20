@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VT6-qp-1mo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading Page View Controller-->
+        <scene sceneID="OE6-qe-4i1">
+            <objects>
+                <viewController id="VT6-qp-1mo" customClass="LoadingPageViewController" customModule="AdvancedProjectManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Wk-Ff-3Ne"/>
+                        <viewControllerLayoutGuide type="bottom" id="gCU-61-gAO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RCh-9m-bb9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appLogo3" translatesAutoresizingMaskIntoConstraints="NO" id="AMt-m9-dmS">
+                                <rect key="frame" x="67" y="203" width="240" height="181"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gCU-61-gAO" firstAttribute="top" secondItem="AMt-m9-dmS" secondAttribute="bottom" constant="283" id="09I-xk-w4m"/>
+                            <constraint firstItem="AMt-m9-dmS" firstAttribute="leading" secondItem="RCh-9m-bb9" secondAttribute="leadingMargin" constant="51" id="5Y9-sr-pyt"/>
+                            <constraint firstItem="AMt-m9-dmS" firstAttribute="centerY" secondItem="RCh-9m-bb9" secondAttribute="centerY" constant="-40" id="ENx-fB-zP2"/>
+                            <constraint firstItem="AMt-m9-dmS" firstAttribute="centerX" secondItem="RCh-9m-bb9" secondAttribute="centerX" id="OoF-zk-Ovi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AMt-m9-dmS" secondAttribute="trailing" constant="52" id="Td8-GX-R6e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="dRz-BP-GnW" kind="show" identifier="SegueLoadingPageToRegisterFirst" id="y4L-jw-1RV"/>
+                        <segue destination="ewz-jv-DdV" kind="show" identifier="SegueLoadingPageToSendAlert" id="cHf-Vs-UcM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woC-sY-CgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24.800000000000001" y="41.829085457271368"/>
+        </scene>
+        <!--RegisterViewController-->
+        <scene sceneID="FpS-AO-11C">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegisterViewController" id="dRz-BP-GnW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="byb-bi-HwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="131"/>
+        </scene>
+        <!--SendAlertViewController-->
+        <scene sceneID="tgz-bx-XAS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SendAlertViewController" id="ewz-jv-DdV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGb-br-AKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="594" y="188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appLogo3" width="800" height="600"/>
+    </resources>
+</document>

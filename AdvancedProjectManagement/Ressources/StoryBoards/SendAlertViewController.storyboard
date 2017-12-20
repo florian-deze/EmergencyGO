@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UjJ-C8-t4A">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Send Alert View Controller-->
+        <scene sceneID="7Th-iU-g8g">
+            <objects>
+                <viewController id="UjJ-C8-t4A" customClass="SendAlertViewController" customModule="AdvancedProjectManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mcg-mg-bze"/>
+                        <viewControllerLayoutGuide type="bottom" id="0p7-A7-W1p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vvg-Xq-Aac">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uE-1m-Kcm">
+                                <rect key="frame" x="111" y="118" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Undefined Emergency">
+                                    <color key="titleColor" red="0.93254128889999999" green="0.35949414219999998" blue="0.32381650719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wLB-gq-zrm" kind="show" id="Fh7-m7-hqS"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nHq-Qk-1LK">
+                                <rect key="frame" x="0.0" y="180" width="375" height="487"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellSendAlert" id="dAQ-Mm-zMg" customClass="sendAlertTableViewCell" customModule="AdvancedProjectManagement" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dAQ-Mm-zMg" id="8WD-yC-Xe5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpf-iW-cT1">
+                                                    <rect key="frame" x="13" y="6" width="349" height="30"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <segue destination="wLB-gq-zrm" kind="show" id="0kZ-nc-kE2"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wpf-iW-cT1" firstAttribute="centerX" secondItem="8WD-yC-Xe5" secondAttribute="centerX" id="4P0-yh-KZ6"/>
+                                                <constraint firstItem="wpf-iW-cT1" firstAttribute="leading" secondItem="8WD-yC-Xe5" secondAttribute="leadingMargin" constant="5" id="4nV-pQ-0ae"/>
+                                                <constraint firstItem="wpf-iW-cT1" firstAttribute="centerY" secondItem="8WD-yC-Xe5" secondAttribute="centerY" id="7uY-nY-NJT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wpf-iW-cT1" secondAttribute="trailing" constant="5" id="uLI-lC-6MM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameOfEmergency" destination="wpf-iW-cT1" id="Wvq-Ad-FrL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="UjJ-C8-t4A" id="z4y-Yr-3nN"/>
+                                    <outlet property="delegate" destination="UjJ-C8-t4A" id="1oa-Rh-fN1"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0b-R6-BHW">
+                                <rect key="frame" x="222" y="28" width="145" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Modify personal data"/>
+                                <connections>
+                                    <segue destination="1WM-3l-eOQ" kind="show" identifier="SegueSendAlertToRegisterFirst" id="bX3-jS-5hw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="sendAlertTableView" destination="nHq-Qk-1LK" id="xgm-Jp-VMk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Od-L5-vHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="81.409295352323838"/>
+        </scene>
+        <!--RegisterViewController-->
+        <scene sceneID="826-zq-qTg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegisterViewController" id="1WM-3l-eOQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YO4-hO-Fsx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646" y="-178"/>
+        </scene>
+        <!--EmergencyStateViewController-->
+        <scene sceneID="LGr-Qs-Cfi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EmergencyStateViewController" id="wLB-gq-zrm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nlz-BV-Y0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="102"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fh7-m7-hqS"/>
+    </inferredMetricsTieBreakers>
+</document>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>none</key>
+	<string>none</string>
+	<key>toBeAssigned</key>
+	<string>to be assigned</string>
+	<key>assigned</key>
+	<string>assigned</string>
+	<key>ambulanceComming</key>
+	<string>an ambulance is coming</string>
+	<key>inTreatment</key>
+	<string>your are in state of treatment</string>
+</dict>
+</plist>

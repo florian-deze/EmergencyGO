@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Priority 1</key>
+	<array>
+		<string>Broken leg</string>
+		<string>Broken arm</string>
+	</array>
+	<key>Priority 2</key>
+	<array>
+		<string>Allergy reaction (not letal)</string>
+	</array>
+	<key>Priority 3</key>
+	<array>
+		<string>Allergy reaction (letal)</string>
+		<string>internal bleeding</string>
+		<string>external bleeding (knife)</string>
+		<string>external bleeding (bullet gun)</string>
+	</array>
+</dict>
+</plist>
