@@ -10,9 +10,9 @@ Your medical records are put inside a database when you register.
 On the other side, an employee in the emergency facility have a software or a web interface that receive the alrm to treat the emergency and can send information about the state of treatment of the emergency to the App user.
 
 # How to install
-git clone https://github.com/florian-deze/EmergencyGO.git
-\cd EmergencyGO
-\pod install
+git clone https://github.com/florian-deze/EmergencyGO.git  <br />
+cd EmergencyGO  <br />
+pod install  <br />
 
 # What is the database used
 Firebase
