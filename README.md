@@ -11,8 +11,8 @@ On the other side, an employee in the emergency facility have a software or a we
 
 # How to install
 git clone https://github.com/florian-deze/EmergencyGO.git
-cd EmergencyGO
-pod install
+\cd EmergencyGO
+\pod install
 
 # What is the database used
 Firebase
